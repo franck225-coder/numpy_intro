@@ -48,3 +48,11 @@ print("first element: ", x[0])
 x[0] = 0 # change the value of the elements
 print("x: ",x)
 
+# slicing
+x = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+print (x)
+print("x in column 1: ", x[:, 1])
+print("x in row 1: ", x[1, :])
+print("x in last row ", x[-1]) # return last row
+print("x rows 0,1 & cols 1,2: ", x[0:2, 1:3])
+
