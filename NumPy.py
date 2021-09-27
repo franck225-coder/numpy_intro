@@ -88,3 +88,5 @@ b = np.array([[7, 8], [9, 8], [11, 12]], dtype=np.float64)
 c = a.dot(b)
 print(f"{a.shape} . {b.shape} = {c.shape}")
 print(c)
+
+# Axis operations
