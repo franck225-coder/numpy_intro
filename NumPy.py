@@ -40,3 +40,11 @@ print("x dtype: ", x.dtype) # data type
 print("np.zeros((2,2)):\n", np.zeros((2,2)))
 print("np.ones((2,2)):\n", np.ones((2,2)))
 print("np.eye((2)):\n", np.eye(5)) # identity matrix
+
+# indexing
+x = np.array([1, 2, 3, 4, 5])
+print("x: ",x)
+print("first element: ", x[0])
+x[0] = 0 # change the value of the elements
+print("x: ",x)
+
