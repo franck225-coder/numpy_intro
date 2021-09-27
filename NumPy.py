@@ -82,3 +82,9 @@ print("x + y: ", np.add(x,y))
 print("x - y: ", np.subtract(x,y))
 print("x * y: ", np.multiply(x,y))
 
+# Dot product
+a = np.array([[1,2,3], [4,5,6]], dtype=np.float64)
+b = np.array([[7, 8], [9, 8], [11, 12]], dtype=np.float64)
+c = a.dot(b)
+print(f"{a.shape} . {b.shape} = {c.shape}")
+print(c)
