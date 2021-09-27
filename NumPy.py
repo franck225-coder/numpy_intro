@@ -112,3 +112,10 @@ y = np.array(3) # scalar
 z = x+y
 print(z)
 
+# transpose
+x = np.array([[1,2,3], [4,5,6]]) # 2x3 matrix
+print("x: ",x)
+print("x shape: ",x.shape)
+y = np.transpose(x, (1,0))
+print("y: ",y)
+print("y shape: ",y.shape)
