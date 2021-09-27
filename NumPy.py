@@ -130,3 +130,24 @@ print ("y.shape: ", y.shape)
 z = np.reshape(x, (2,-1))
 print ("z: ", z)
 print ("z.shape: ", z.shape)
+
+# for instance
+x = np.array([[[1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3]],
+            [[10, 10, 10, 10], [20, 20, 20, 20], [30, 30, 30, 30]]])
+print ("x:\n", x)
+print ("x.shape: ", x.shape)
+t = np.transpose(x, ((1,0,2)))
+t = np.reshape(t, (t.shape[0],-1))
+print(t.shape)
+print(t)
+
+# joining
+x = np.random.random((2, 3))
+print(x)
+print(x.shape)
+
+# concatenation
+y = np.concatenate([x, x], axis=0)
+print(y)
+print(y.shape)
+
