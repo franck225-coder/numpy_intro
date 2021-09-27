@@ -29,7 +29,7 @@ print("x size: ", x.size) # size of elements
 print("x dtype: ", x.dtype) # data type
 
 # 3-D tensor
-x = np.array([[[2,4,1], [5,1,4], [4,4,1]], [[7,9,5], [3,0,3], [5,5,7]]])
+x = np.array([[[2,4], [5,1], [4,4]], [[7,9], [3,0], [5,5]]])
 print("x: ", x)
 print("x ndim: ", x.ndim) # number of dimensions
 print("x shape: ", x.shape) # dimensions
@@ -54,6 +54,7 @@ print (x)
 print("x in column 1: ", x[:, 1])
 print("x in row 1: ", x[1, :])
 print("x in last row ", x[-1]) # return last row
+print("x in last column ", x[:,-1]) # return last row
 print("x rows 0,1 & cols 1,2: ", x[0:2, 1:3])
 
 # Integer array indexing
@@ -116,7 +117,7 @@ print(z)
 x = np.array([[1,2,3], [4,5,6]]) # 2x3 matrix
 print("x: ",x)
 print("x shape: ",x.shape)
-y = np.transpose(x, (1,0))
+y = np.transpose(x, (1,0)) # flip dimensions at indexe 0 and 1
 print("y: ",y)
 print("y shape: ",y.shape)
 
