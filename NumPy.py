@@ -35,3 +35,8 @@ print("x ndim: ", x.ndim) # number of dimensions
 print("x shape: ", x.shape) # dimensions
 print("x size: ", x.size) # size of elements
 print("x dtype: ", x.dtype) # data type
+
+# Functions
+print("np.zeros((2,2)):\n", np.zeros((2,2)))
+print("np.ones((2,2)):\n", np.ones((2,2)))
+print("np.eye((2)):\n", np.eye(5)) # identity matrix
