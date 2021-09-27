@@ -90,3 +90,18 @@ print(f"{a.shape} . {b.shape} = {c.shape}")
 print(c)
 
 # Axis operations
+# Sum across a dimension
+x = np.array([[1, 2], [3, 4]])
+print(x)
+print("sum all: ", np.sum(x))
+print("sum accross rows: ", np.sum(x, axis=0))
+print("sum accross column: ", np.sum(x, axis=1))
+
+# Min/max
+x = np.array([[1,2,3], [4,5,6], [2,1,12]])
+print("min: ", x.min())
+print("max: ", x.max())
+print("max across row ", x.max(axis=0))
+print("min across row ", x.min(axis=0))
+print("max across column ", x.max(axis=1))
+print("min across column ", x.min(axis=1))
