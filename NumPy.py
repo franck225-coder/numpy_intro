@@ -72,3 +72,13 @@ print ("x: ", x)
 print ("x > 2: ", x>2)
 print ("x[x > 2]: ", x[x>2])
 print ("x[x != 0]: ", x[x != 0])
+print ("[x != 0]: ", [x != 0])
+
+# Arithmetic
+# Basic math
+x = np.array([[1,2], [3,4]], dtype=np.float64)
+y = np.array([[1,2], [3,4]], dtype=np.float64)
+print("x + y: ", np.add(x,y))
+print("x - y: ", np.subtract(x,y))
+print("x * y: ", np.multiply(x,y))
+
