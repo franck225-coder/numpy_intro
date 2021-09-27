@@ -147,7 +147,11 @@ print(x)
 print(x.shape)
 
 # concatenation
-y = np.concatenate([x, x], axis=0)
+y = np.concatenate([x, x], axis=1)
 print(y)
 print(y.shape)
 
+# stacking
+z = np.stack([x, x], axis=0) # stack on new axis
+print(z)
+print(z.shape)
