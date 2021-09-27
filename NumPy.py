@@ -155,3 +155,13 @@ print(y.shape)
 z = np.stack([x, x], axis=0) # stack on new axis
 print(z)
 print(z.shape)
+
+# Expanding / reducing
+# Adding dimensions
+x = np.array([[1,2,3],[4,5,6]])
+print ("x: ", x)
+print ("x.shape: ", x.shape)
+y = np.expand_dims(x, 1)
+print ("y: ", y)
+print ("y.shape: ", y.shape) # notice extra set of brackets are added
+
