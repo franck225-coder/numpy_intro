@@ -165,3 +165,10 @@ y = np.expand_dims(x, 1)
 print ("y: ", y)
 print ("y.shape: ", y.shape) # notice extra set of brackets are added
 
+# Removing dimensions
+x = np.array([[[1,2,3]],[[4,5,6]]])
+print ("x:\n", x)
+print ("x.shape: ", x.shape)
+y = np.squeeze(x, 1) # squeeze dim 1
+print ("y: \n", y)
+print ("y.shape: ", y.shape)  # notice extra set of brackets are gone
