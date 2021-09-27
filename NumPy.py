@@ -56,3 +56,12 @@ print("x in row 1: ", x[1, :])
 print("x in last row ", x[-1]) # return last row
 print("x rows 0,1 & cols 1,2: ", x[0:2, 1:3])
 
+# Integer array indexing
+x = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+print(x)
+row_to_get = np.array([0, 1, 2])
+print("row_to_get: ", row_to_get)
+col_to_get = np.array([0, 2, 1])
+print("col_to_get: ", col_to_get)
+value_to_get = x[row_to_get, col_to_get]
+print("value_to_get: ", value_to_get)
