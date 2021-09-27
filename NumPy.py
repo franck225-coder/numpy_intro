@@ -65,3 +65,10 @@ col_to_get = np.array([0, 2, 1])
 print("col_to_get: ", col_to_get)
 value_to_get = x[row_to_get, col_to_get]
 print("value_to_get: ", value_to_get)
+
+# Boolean array indexing
+x = np.array([[1, 2], [3, 4], [5, 6]])
+print ("x: ", x)
+print ("x > 2: ", x>2)
+print ("x[x > 2]: ", x[x>2])
+print ("x[x != 0]: ", x[x != 0])
