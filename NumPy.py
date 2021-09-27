@@ -105,3 +105,10 @@ print("max across row ", x.max(axis=0))
 print("min across row ", x.min(axis=0))
 print("max across column ", x.max(axis=1))
 print("min across column ", x.min(axis=1))
+
+# Broadcast
+x = np.array([1,2]) # vector
+y = np.array(3) # scalar
+z = x+y
+print(z)
+
