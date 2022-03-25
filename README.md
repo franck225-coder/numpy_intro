@@ -2,5 +2,6 @@
 Here we present the numpy library along with its application on:
 - scalar
 - vector
-- 2D/3D vector
- 
+- matrix
+- 2D/3D tensor
+
